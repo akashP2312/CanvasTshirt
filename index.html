@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script src="fabric.min.js"></script>
+		<script src="jquery-3.4.0.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<body>
+			<div id="canvas-wrapper" class="editor-area">
+  <div class="canvas-bg-wrapper">
+    <img class="canvas-bg" alt="" src="t-shirt.png">
+      <canvas width="203" height="360" id="c"></canvas>
+  </div>
+</div>
+
+<div class="controls">
+  
+<input type="file" id="uploadImg"><br>
+  <button onClick="insertText()">Insert Text</button>
+
+  <div id="textMenu" class="hideOperations">
+      <button id="underline">UnderLine</button>
+  Size<input type="range" min="5" max="150" value="40" id="size">
+    <input type="range" min="0.1" max="5" value="0.1" id="height">
+  <span>Text Color</span><input type="color" id="color">
+  <span>BackGround Color</span><input type="color" id="bg-color">
+  <button id="italic">Italic</button>
+  <button id="bold">Bold</button>
+  </div>
+  <button onClick="addShape()">Insert Shape</button>
+  <button onClick="deleteObjects()">Delete Objects</button>
+</div>
+	<script src="script.js"></script>
+		</body>
+		
+	</head>
+</html>
